@@ -53,3 +53,4 @@ replay_pid*
 *.code-workspace
 
 # End of https://www.toptal.com/developers/gitignore/api/java,visualstudiocode
+*.in
