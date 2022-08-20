@@ -1,28 +1,42 @@
 import java.util.Scanner;
 
 public class J01013 {
-    static Scanner input = new Scanner(System.in);
-    static int sum = 0;
-    
-    static void solution () {
-        int n = input.nextInt();
-        while (n%2 == 0) {
-            sum += 2;
-            n /= 2;
-        }
-        for (int i = 3; i <= Math.sqrt(n); i += 2) {
-            if (i > n)  break;
-            while (n%i == 0) {
-                sum += i;
-                n /= i;
+    static final int maxVal = (int) 2e6;
+    static int[] prime = new int[maxVal + 5];
+    static void primeDivisor () {
+        for (int i = 2; i <= Math.sqrt(maxVal); i++) {
+            if (prime[i] == 0) {
+                for (int j = i; j <= maxVal; j += i) {
+                    if (prime[j] == 0)
+                    prime[j] = i;
+                }
             }
         }
-        if (n > 1)  sum += n;
+        for (int i = 2; i <= maxVal; i++) {
+            if (prime[i] == 0) {
+                prime[i] = i;
+            }
+        }
+    }
+    static void solution () {
+        Scanner input = new Scanner(System.in);
+        int t = input.nextInt();
+        long sum = 0;
+        while (t-- > 0) {
+            int n = input.nextInt();
+            if (prime[n] == 0)
+                sum += n;
+            else {
+                while (n != 1) {
+                    sum += prime[n];
+                    n /= prime[n];
+                }
+            }
+        }
+        System.out.println(sum);
     }
     public static void main(String[] args) {
-        int t = input.nextInt();
-        while (t-- > 0) 
-            solution();
-        System.out.println(sum);
+        primeDivisor();
+        solution();
     }
 }
