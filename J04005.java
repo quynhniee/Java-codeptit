@@ -6,6 +6,7 @@ public class J04005 {
         ThiSinh ts = new ThiSinh(input.nextLine(), input.nextLine(), 
         input.nextDouble(), input.nextDouble(), input.nextDouble());
         System.out.format(ts + " %.1f", ts.TongDiem());
+        input.close();
     }
 }
 

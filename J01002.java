@@ -8,5 +8,6 @@ public class J01002 {
             long n = input.nextLong();
             System.out.println(n * (n + 1) / 2);
         }
+        input.close();
     }
 }

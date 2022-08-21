@@ -16,5 +16,6 @@ public class J01014 {
             }
             System.out.println(n != 0 ? Math.max(n, res) : res);
         }
+        input.close();
     }
 }

@@ -14,5 +14,6 @@ public class J01025 {
         Arrays.sort(y);
         int edge = Math.max(x[3] - x[0], y[3] - y[0]);
         System.out.println(edge*edge);
+        input.close();
     }
 }

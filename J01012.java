@@ -21,5 +21,6 @@ public class J01012 {
             int n = input.nextInt();
             solution(n);
         }
+        input.close();
     }
 }

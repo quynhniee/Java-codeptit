@@ -1,4 +1,3 @@
-import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
@@ -18,5 +17,6 @@ public class J07002 {
                     result += Integer.parseInt(i);
         }
         System.out.println(result);
+        input.close();
     }
 }

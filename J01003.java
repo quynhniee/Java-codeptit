@@ -8,5 +8,6 @@ public class J01003 {
         if (a == 0 && b == 0)   System.out.println("VSN");
         else if (a == 0 && b != 0)  System.out.println("VN");
         else    System.out.format("%.2f", -b/a);
+        input.close();
     }
 }

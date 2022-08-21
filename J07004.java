@@ -1,7 +1,5 @@
-import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
-import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
 import java.util.TreeMap;
@@ -21,5 +19,6 @@ public class J07004 {
         }
         for (Integer key : map.keySet()) 
             System.out.println(key + " " + map.get(key));
+        input.close();
     }
 }

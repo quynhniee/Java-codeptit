@@ -1,6 +1,5 @@
 
 import java.util.*;
-import java.lang.*;
 public class CTDL002 {
     public static void sumSubsequences (ArrayList<ArrayList<Integer>> ans, ArrayList<Integer> a, ArrayList<Integer> tmp, int k, int sum, int i) {
         for (int j = i; j < a.size(); j++) {
@@ -32,5 +31,6 @@ public class CTDL002 {
         Collections.sort(a);
         sumSubsequences(ans, a, new ArrayList<Integer>(), k, 0, 0);
         output(ans);
+        input.close();
     }
 }

@@ -1,5 +1,4 @@
 import java.util.*;
-import java.lang.*;
 public class CTDL001 {
     static void printString (String s) {
         for (int i = 0; i < s.length(); i++)  
@@ -22,6 +21,7 @@ public class CTDL001 {
         Scanner input = new Scanner(System.in);
         int n = input.nextInt();
         generate(0, "", n);
+        input.close();
     }
     
 }

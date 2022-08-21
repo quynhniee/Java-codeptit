@@ -21,5 +21,6 @@ public class J02006_Hop_cua_hai_day_so {
                 mark[val] = false;
             }
         });
+        sc.close();
     }
 }

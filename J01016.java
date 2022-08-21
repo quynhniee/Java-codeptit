@@ -8,5 +8,6 @@ public class J01016 {
         for (char i:n) 
             if (i == '4' || i == '7')   count++;
         System.out.println(count == 4 || count == 7 ? "YES" : "NO");
+        input.close();
     }
 }

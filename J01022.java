@@ -22,5 +22,6 @@ public class J01022 {
             long k = input.nextLong();
             System.out.println(divide(k-1, n-1));
         }
+        input.close();
     }
 }

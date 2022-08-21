@@ -23,5 +23,6 @@ public class J02005_Giao_cua_hai_day_so {
                 mark[b[i]] = false;
             }
         System.out.println();
+        sc.close();
     }
 }

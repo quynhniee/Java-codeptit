@@ -14,5 +14,6 @@ public class J01024 {
             char s[] = input.nextLine().toCharArray();
             System.out.println(check(s) ? "YES" : "NO");
         }
+        input.close();
     }
 }

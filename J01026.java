@@ -12,5 +12,6 @@ public class J01026 {
             int n = input.nextInt();
             System.out.println(check(n) ? "YES" : "NO");
         }
+        input.close();
     }
 }

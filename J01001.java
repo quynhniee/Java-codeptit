@@ -6,5 +6,6 @@ public class J01001 {
         int a = input.nextInt();
         int b = input.nextInt();
         System.out.println( a <= 0 || b <= 0 ? 0 : ((a + b) * 2 + " " + a * b));
+        input.close();
     }
 }

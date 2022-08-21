@@ -34,6 +34,7 @@ public class J01013 {
             }
         }
         System.out.println(sum);
+        input.close();
     }
     public static void main(String[] args) {
         primeDivisor();

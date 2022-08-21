@@ -10,6 +10,7 @@ public class J07001 {
                 String line = input.nextLine();
                 System.out.println(line);
             }
+            input.close();
         } catch (Exception e) {
             System.out.println("An error occurred");
             e.printStackTrace();
