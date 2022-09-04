@@ -29,6 +29,7 @@ class WordSet {
                 set.add(word);
             }
         }
+        input.close();
         StringBuilder res = new StringBuilder("");
         for (String s : set)
             res.append(s).append("\n");

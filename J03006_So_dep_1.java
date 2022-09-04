@@ -9,5 +9,6 @@ public class J03006_So_dep_1 {
             StringBuffer s = new StringBuffer(sc.nextLine());
             System.out.println(s.toString().matches("[^13579]+") && s == s.reverse() ? "YES" : "NO");
         }
+        sc.close();
     }
 }

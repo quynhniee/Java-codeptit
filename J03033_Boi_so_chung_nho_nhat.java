@@ -10,5 +10,6 @@ public class J03033_Boi_so_chung_nho_nhat {
             BigInteger b = input.nextBigInteger();
             System.out.println(a.divide(a.gcd(b)).multiply(b));
         }
+        input.close();
     }
 }

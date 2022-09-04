@@ -16,5 +16,6 @@ public class J3007_So_dep_2 {
             StringBuilder s = new StringBuilder(sc.nextLine());
             System.out.println(s == s.reverse() && s.toString().matches("^8.*8$") && sum(s) ? "YES" : "NO");
         }
+        sc.close();
     }
 }

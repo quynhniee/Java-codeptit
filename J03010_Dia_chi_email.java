@@ -21,5 +21,6 @@ public class J03010_Dia_chi_email {
                 System.out.println(res + map.get(res) + "@ptit.edu.vn");
             }
         }
+        sc.close();
     }
 }
