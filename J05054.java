@@ -13,7 +13,6 @@ public class J05054 {
         list.sort((a, b) -> {
             if(a.getScore() > b.getScore()) {
                 return -1;
-                //
             }
             return 1;
         });
@@ -26,6 +25,7 @@ public class J05054 {
             return a.getId().compareTo(b.getId());
         });
         list.forEach(System.out::println);
+        sc.close();
     }
 }
 
