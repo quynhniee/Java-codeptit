@@ -22,24 +22,24 @@ public class J05005_Danh_sach_doi_tuong_sinh_vien_3 {
     }
 }
 
-// class Student {
-//     String id, name, className, dob;
-//     Double gpa;
+class Student {
+    String id, name, className, dob;
+    Double gpa;
 
-//     public Double getGpa() {
-//         return this.gpa;
-//     }
+    public Double getGpa() {
+        return this.gpa;
+    }
 
-//     public Student(int index, String name, String className, String dob, Double gpa) throws ParseException {
-//         this.id = "B20DCCN" + String.format("%03d", index);
-//         this.name = name;
-//         this.className = className;
-//         this.dob = new SimpleDateFormat("dd/MM/yyyy").format(new SimpleDateFormat("dd/MM/yyyy").parse(dob));
-//         this.gpa = gpa;
-//     }
+    public Student(int index, String name, String className, String dob, Double gpa) throws ParseException {
+        this.id = "B20DCCN" + String.format("%03d", index);
+        this.name = name;
+        this.className = className;
+        this.dob = new SimpleDateFormat("dd/MM/yyyy").format(new SimpleDateFormat("dd/MM/yyyy").parse(dob));
+        this.gpa = gpa;
+    }
 
-//     @Override
-//     public String toString() {
-//         return id + " " + name + " " + className + " " + dob + " " + String.format("%.2f", gpa);
-//     }
-// }
+    @Override
+    public String toString() {
+        return id + " " + name + " " + className + " " + dob + " " + String.format("%.2f", gpa);
+    }
+}

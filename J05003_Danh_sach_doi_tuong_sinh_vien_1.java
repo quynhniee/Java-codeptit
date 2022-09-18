@@ -32,7 +32,4 @@ class Student {
         return id + " " + name + " " + className + " " + dob + " " + String.format("%.2f", gpa);
     }
 
-    public Double getGpa() {
-        return this.gpa;
-    }
 }
