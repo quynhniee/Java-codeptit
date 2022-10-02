@@ -1,13 +1,15 @@
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.FileNotFoundException;
-import java.util.Scanner;
+import java.io.IOException;
 
 public class J07005_So_khac_nhau_trong_file_2 {
-    public static void main(String[] args) throws FileNotFoundException, NumberFormatException {
-        Scanner sc = new Scanner(new File("DATA.IN"));
+    public static void main(String[] args) throws FileNotFoundException, IOException {
+        FileInputStream sc = new FileInputStream(new File("DATA.IN"));
         int[] map = new int[1005];
         for (int i = 0; i < 100000; i++) {
-            int num = Integer.parseInt(sc.next(), 2);
+            int num = sc.read();
+            if (num == -1)  break;
             map[num]++;
         }
         for (int i = 0; i < 1000; i++) {
