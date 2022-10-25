@@ -1,3 +1,5 @@
+package Practice;
+
 import java.util.*;
 
 public class Danh_sach_thi_ICPC {
