@@ -1,7 +1,6 @@
 import java.io.*;
 import java.util.*;
 
-import javax.script.Compilable;
 
 public class J07045_Loai_phong {
     public static void main(String[] args) throws IOException {
